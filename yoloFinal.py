@@ -15,7 +15,7 @@ uploaded_file = st.file_uploader("Upload Image or Video Files" , type = ['jpg' ,
 #Loading the existing model
 
 try:
-    model = YOLO("/Users/himanshuyadav/Desktop/yolo/Number_Plate_Detection_model(Yolov8).pt")
+    model = YOLO("./Number_Plate_Detection_model(Yolov8).pt")
 except Exception as e:
     print(f"Unsupported or corrupted Model : {e}")
 
